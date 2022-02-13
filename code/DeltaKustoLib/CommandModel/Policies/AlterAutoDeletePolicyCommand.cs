@@ -65,10 +65,10 @@ namespace DeltaKustoLib.CommandModel.Policies
             builder.Append(TableName);
             builder.Append(" policy auto_delete");
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
             builder.Append(SerializePolicy());
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
 
             return builder.ToString();
         }

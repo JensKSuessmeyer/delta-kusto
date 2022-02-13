@@ -95,10 +95,10 @@ namespace DeltaKustoLib.CommandModel.Policies
             }
             builder.Append(" policy retention");
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
             builder.Append(SerializePolicy());
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
 
             return builder.ToString();
         }

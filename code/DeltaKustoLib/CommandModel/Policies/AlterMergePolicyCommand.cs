@@ -97,10 +97,10 @@ namespace DeltaKustoLib.CommandModel.Policies
             }
             builder.Append(" policy merge");
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
             builder.Append(SerializePolicy());
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
 
             return builder.ToString();
         }

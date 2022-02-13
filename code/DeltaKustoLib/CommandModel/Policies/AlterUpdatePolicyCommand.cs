@@ -90,10 +90,10 @@ namespace DeltaKustoLib.CommandModel.Policies
             builder.Append(TableName);
             builder.Append(" policy update");
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
             builder.Append(Serialize(UpdatePolicies, _serializerContext));
             builder.AppendLine();
-            builder.Append("```");
+            builder.AppendLine("```");
 
             return builder.ToString();
         }
